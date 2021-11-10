@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gyors Munkalap</string>
+    <string name="save_signature">Aláírás mentés</string>
+    <string name="Beallitasok_button">Beallítások</string>
+    <string name="Bovebben_button">Bővebben</string>
+    <string name="Ceg_nev_">Cég név</string>
+    <string name="agreement">Elfogadom a használati feltételeket.</string>
+    <string name="Kilepes_button">Kilépés</string>
+    <string name="Munkalap_button">Munkalap</string>
+    <string name="clear_pad">Tábla tisztítás</string>
+    <string name="Ceg_cim">Cég cím</string>
+    <string name="ceg_tel">Cég telefon</string>
+    <string name="Ceg_email">Cég E-mail</string>
+    <string name="Logo_tallozas">Logó tallózás</string>
+    <string name="Excel_hasznalat_string">Külső szolgáltatás táblázat használata(XLS)</string>
+    <string name="Megjegyzes_1">Megjegyzés 1</string>
+    <string name="Megjegyzes_2">Megjegyzés [szögletes]</string>
+    <string name="Munkalap_v1">Munkalap V1</string>
+    <string name="munkalap_hamarosan">Hamarosan</string>
+    <string name="Mentes_string">Mentés</string>
+    <string name="Ugyfel_cim">Cím</string>
+    <string name="Ugyfel_email">E-mail</string>
+    <string name="Ugyfel_nev">Név</string>
+    <string name="Ugyfel_tel">Telefon</string>
+    <string name="Mennyiseg_string">Mennyiség</string>
+    <string name="ar_string">Ár</string>
+    <string name="sorozat_string">Sorozatszám</string>
+    <string name="szolgaltatas_add">Szolgáltatás hozzáadása</string>
+    <string name="comment">Megjegyzés</string>
+    <string name="atvettem">Átvettem</string>
+    <string name="other_services">Egyéb szolg.</string>
+    <string name="atadta">Átadta</string>
+    <string name="comment_box">Megjegyzés</string>
+    <string name="Szolgaltatas_neve">Szolgáltatás neve</string>
+    <string name="Egyeb_szolgataltas_mennyiseg">Mennyiség</string>
+    <string name="Egyeb_sorozat">Sorozatszám</string>
+    <string name="Egyeb_ar">Ár</string>
+    <string name="Egyeb_szolgaltatas_hozzad">Egyéb szolgáltatás hozzáadása</string>
+    <string name="Worker">Munkavégző</string>
+    <string name="customer">Megrendelő</string>
+    <string name="Munkalap_mentese">Munkalap mentés</string>
+
+    <string-array name="Statuszok">
+        <item>Elvégezve</item>
+        <item>Folyamatban</item>
+        <item>Törölve</item>
+    </string-array>
+
+    <string-array name="Mennyiseg">
+    <item>mm</item>
+    <item>cm</item>
+    <item>dm</item>
+    <item>m</item>
+    <item>km</item>
+    <item>mm2</item>
+    <item>cm2</item>
+    <item>dm2</item>
+    <item>m2</item>
+    <item>km2</item>
+    <item>mm3</item>
+    <item>mc3</item>
+    <item>dm3</item>
+    <item>m3</item>
+    <item>km3</item>
+    <item>mg</item>
+    <item>cg</item>
+    <item>dg</item>
+    <item>g</item>
+    <item>dkg</item>
+    <item>kg</item>
+    <item>t</item>
+    <item>ml</item>
+    <item>cl</item>
+    <item>dl</item>
+    <item>l</item>
+    <item>hl</item>
+    <item>sec</item>
+    <item>min</item>
+    <item>h</item>
+    <item>nap</item>
+    <item>hét</item>
+    <item>hónap</item>
+    <item>év</item>
+    </string-array>
+    <string name="Osszesen">Összesen</string>
+    <string name="Szolgaltatas_hozzaadva">Szolgáltatás hozzáadva</string>
+    <string name="szolgaltatas_nev_ures">Szogláltatás név üres!</string>
+    <string name="szolgaltatas_egyseg_ures">Szolgáltatás egyéség üres!</string>
+    <string name="szolgaltatas_ara_ures">Szolgáltatás ára üres!</string>
+    <string name="szolgaltatas_serial_number_ures">Szolgáltatás széria száma üres!</string>
+    <string name="Munkalap_title">Munkalap</string>
+    <string name="megrendelo_alairasa">Megrendelő aláírása</string>
+    <string name="Munkavegzo_alairasa">Munkavégző aláírása</string>
+    <string name="Mentes_sikerult">Mentés sikerült.</string>
+    <string name="Mentes_hiba">Mentés hiba!</string>
+    <string name="Date">Dátum</string>
+    <string name="biztos_be_akarja_zarni">Biztos be akarja zárni?</string>
+    <string name="nincs_mentesre_lehetoseg">(Nincs mentésre lehetőség!)</string>
+    <string name="Megse">Mégse</string>
+    <string name="Bezar">Bezár</string>
+    <string name="a_szolgaltatast_megrendeltem">A szolgáltatást megrendeltem</string>
+    <string name="Egyseg_ar_title">Egység ár</string>
+    <string name="Szolgaltatas_title">Szolgáltatás</string>
+    <string name="alairas_elfogadas">Aláírás elfogadás</string>
+    <string name="Torles">Törlés</string>
+    <string name="Munkavegzo_alairas_save">\"Munkavégző aláírása mentve</string>
+    <string name="Megrendelo_alairasa_mentve">Megrendelő aláírása mentve</string>
+</resources>

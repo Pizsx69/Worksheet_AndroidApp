@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Munkalap"
+    android:background="@drawable/szinatmenet_bc">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <AutoCompleteTextView
+                android:id="@+id/nev_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+
+                android:hint="@string/Ugyfel_nev"
+
+                android:inputType="text"
+                android:minHeight="200dp"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"
+                tools:ignore="MissingConstraints" />
+
+            <AutoCompleteTextView
+                android:id="@+id/cim_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+
+                android:hint="@string/Ugyfel_cim"
+                android:inputType="text"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"
+                android:minHeight="200dp"
+                tools:ignore="MissingConstraints" />
+
+            <AutoCompleteTextView
+                android:id="@+id/email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="@string/Ugyfel_email"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"
+
+                android:inputType="text"
+                android:minHeight="200dp"
+
+                tools:ignore="MissingConstraints" />
+
+            <AutoCompleteTextView
+                android:id="@+id/phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="@string/Ugyfel_tel"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"
+
+                android:inputType="text"
+                android:minHeight="200dp"
+
+                tools:ignore="MissingConstraints" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <Spinner
+                    android:id="@+id/szolgaltatasok_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+
+                    android:spinnerMode="dialog"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="MissingConstraints"
+
+                    />
+
+                <EditText
+                    android:id="@+id/szolgaltatas_mennyiseg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+
+
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/munkalap_editek"
+                    android:hint="@string/Mennyiseg_string"
+                    android:inputType="number"
+
+                    android:minHeight="200dp"
+                    android:paddingLeft="15dp"
+                    app:layout_constraintBottom_toTopOf="@id/szolgaltatas_serial"
+                    app:layout_constraintEnd_toStartOf="@id/Egyseg"
+                    app:layout_constraintHorizontal_bias="0.0"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatasok_spinner"
+                    app:layout_constraintVertical_bias="0.0" />
+
+
+                <Spinner
+                    android:id="@+id/Egyseg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/munkalap_editek"
+
+                    android:entries="@array/Mennyiseg"
+                    android:spinnerMode="dialog"
+                    android:paddingLeft="15dp"
+                    app:layout_constraintBottom_toTopOf="@id/szolgaltatas_ar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/szolgaltatas_mennyiseg"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatasok_spinner"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/szolgaltatas_ar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/munkalap_editek"
+
+                    android:hint="@string/ar_string"
+                    android:inputType="number"
+                    android:minHeight="200dp"
+                    android:paddingLeft="15dp"
+                    app:layout_constraintBottom_toTopOf="@id/statusz_spinner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/szolgaltatas_serial"
+                    app:layout_constraintTop_toBottomOf="@id/Egyseg"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/szolgaltatas_serial"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/munkalap_editek"
+
+
+
+                    android:hint="@string/sorozat_string"
+                    android:inputType="text"
+                    android:paddingLeft="15dp"
+                    app:layout_constraintBottom_toTopOf="@id/statusz_spinner"
+                    app:layout_constraintEnd_toStartOf="@id/szolgaltatas_ar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatas_mennyiseg" />
+
+                <Spinner
+                    android:id="@+id/statusz_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/munkalap_editek"
+                    android:entries="@array/Statuszok"
+                    android:spinnerMode="dialog"
+                    android:paddingLeft="15dp"
+                    android:popupBackground="@drawable/munkalap_editek"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent"
+                    app:layout_constraintVertical_bias="0.849" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/szolgaltatas_hozzad"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/button_kerekites_sarga"
+                android:onClick="Szolgaltatas_hozzaadas"
+
+
+                android:text="@string/szolgaltatas_add"
+                tools:visibility="visible" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkBox_Megjegyzes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Megjegyzes_checkbox_event"
+                    android:text="@string/comment"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/checkBox2_Atvedtem"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatas_hozzad"
+                    android:background="@drawable/button_kerekites_sarga"
+                    tools:ignore="NotSibling"
+                    android:paddingEnd="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox2_Atvedtem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Atadta_checkbox_event"
+                    android:text="@string/atvettem"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatas_hozzad"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    android:background="@drawable/button_kerekites_sarga"
+                    tools:layout_editor_absoluteY="0dp"
+                    tools:ignore="NotSibling"
+                    android:paddingEnd="10dp"/>
+
+                <CheckBox
+                    android:id="@+id/checkBox3_Egyeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="Egyeb_szolgaltatas_event"
+                    android:text="@string/other_services"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2_Atvedtem"
+                    app:layout_constraintTop_toBottomOf="@id/szolgaltatas_hozzad"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:layout_editor_absoluteY="0dp"
+                    android:background="@drawable/button_kerekites_sarga"
+                    tools:ignore="NotSibling"
+                    android:paddingEnd="10dp"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/atadta_kellekek"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="@string/atadta"
+                android:inputType="text"
+                android:minHeight="200dp"
+
+                android:visibility="visible"
+                tools:ignore="MissingConstraints"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:id="@+id/megjegyzes_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:hint="@string/comment_box"
+                android:inputType="text"
+                android:minHeight="200dp"
+                tools:ignore="MissingConstraints"
+                android:background="@drawable/munkalap_editek"
+                android:paddingLeft="15dp"
+                android:layout_marginBottom="4dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Egyeb_szolgaltatasok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/Egyeb_szolgaltatas_neve"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/Szolgaltatas_neve"
+                    android:inputType="text"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    android:background="@drawable/munkalap_editek"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="4dp"/>
+
+                <EditText
+                    android:id="@+id/egyeb_szolgaltatas_mennyiseg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+
+
+                    android:hint="@string/Egyeb_szolgataltas_mennyiseg"
+                    android:inputType="number"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/egyseg_2"
+                    app:layout_constraintBottom_toTopOf="@id/egyeb_szolgaltatas_serial"
+                    app:layout_constraintTop_toBottomOf="@id/Egyeb_szolgaltatas_neve"
+                    android:background="@drawable/munkalap_editek"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"
+
+                    />
+
+                <Spinner
+                    android:id="@+id/egyseg_2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+
+                    android:entries="@array/Mennyiseg"
+                    android:spinnerMode="dialog"
+                    app:layout_constraintBottom_toTopOf="@id/egyeb_szolgaltatas_ar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/egyeb_szolgaltatas_mennyiseg"
+                    app:layout_constraintTop_toBottomOf="@id/Egyeb_szolgaltatas_neve"
+                    android:background="@drawable/munkalap_editek"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="4dp"/>
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/egyeb_szolgaltatas_serial"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+
+                    android:hint="@string/Egyeb_sorozat"
+                    android:inputType="text"
+                    android:minHeight="200dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/egyeb_szolgaltatas_ar"
+                    app:layout_constraintBottom_toTopOf="@id/egyeb_szolgaltatas_hozzad"
+                    app:layout_constraintTop_toBottomOf="@id/egyeb_szolgaltatas_mennyiseg"
+                    android:background="@drawable/munkalap_editek"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="4dp"
+                    android:autofillHints="" />
+
+
+                <EditText
+                    android:id="@+id/egyeb_szolgaltatas_ar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:hint="@string/Egyeb_ar"
+                    android:inputType="number"
+                    android:minHeight="200dp"
+                    app:layout_constraintBottom_toTopOf="@id/egyeb_szolgaltatas_hozzad"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/egyeb_szolgaltatas_serial"
+                    app:layout_constraintTop_toBottomOf="@id/egyseg_2"
+                    android:background="@drawable/munkalap_editek"
+                    android:paddingLeft="15dp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/egyeb_szolgaltatas_hozzad"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/button_kerekites_sarga"
+                    android:onClick="Egyeb_szolgaltatas_hozzaadas"
+                    android:paddingLeft="15dp"
+
+
+                    android:text="@string/Egyeb_szolgaltatas_hozzad"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                     />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/Munkavegzo_allairasa"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+
+
+                    android:onClick="Munkat_vegezte_alairas"
+                    android:text="@string/Worker"
+                    app:layout_constraintEnd_toStartOf="@id/Megrendeo_alairasa"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:background="@drawable/button_kerekites"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="4dp"/>
+                <Button
+                    android:id="@+id/Megrendeo_alairasa"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:onClick="Megrendelo_alairas"
+                    android:text="@string/customer"
+                    app:layout_constraintStart_toEndOf="@id/Munkavegzo_allairasa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+
+                    android:background="@drawable/button_kerekites"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="4dp"
+                     />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/savebutton"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+
+
+
+                android:layout_marginTop="8dp"
+                android:onClick="munkalap_mentes"
+                android:text="@string/Munkalap_mentese"
+
+                tools:ignore="MissingConstraints"
+
+                android:background="@drawable/button_kerekites_sarga"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

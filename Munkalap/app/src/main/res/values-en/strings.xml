@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gyors Munkalap</string>
+    <string name="Beallitasok_button">Settings</string>
+    <string name="Bovebben_button">More</string>
+    <string name="Ceg_nev_">Company name</string>
+    <string name="Kilepes_button">Quit</string>
+    <string name="Munkalap_button">Worksheet</string>
+    <string name="agreement">I agree the terms and conditions.</string>
+    <string name="clear_pad">Clear Pad</string>
+    <string name="save_signature">Save Signature</string>
+    <string name="Ceg_cim">Company address</string>
+    <string name="ceg_tel">Company phone</string>
+    <string name="Ceg_email">Company email</string>
+    <string name="Logo_tallozas">Logo browse</string>
+    <string name="Excel_hasznalat_string">Using external Excel table.(XLS)</string>
+    <string name="Megjegyzes_1">"Note "</string>
+    <string name="Megjegyzes_2">Note [square]</string>
+    <string name="Munkalap_v1">Worksheet v1</string>
+    <string name="munkalap_hamarosan">Soon</string>
+    <string name="Mentes_string">Save</string>
+    <string name="Ugyfel_cim">Address</string>
+    <string name="Ugyfel_email">Email</string>
+    <string name="Ugyfel_nev">Name</string>
+    <string name="Ugyfel_tel">Phone</string>
+    <string name="Mennyiseg_string">Quantity</string>
+    <string name="ar_string">Price</string>
+    <string name="sorozat_string">Serial number</string>
+    <string name="szolgaltatas_add">Add Service</string>
+    <string name="comment">Comment</string>
+    <string name="atvettem">I took over</string>
+    <string name="other_services">Other service</string>
+    <string name="atadta">Handed</string>
+    <string name="comment_box">Comment</string>
+    <string name="Szolgaltatas_neve">Service name</string>
+    <string name="Egyeb_szolgataltas_mennyiseg">Quantity</string>
+    <string name="Egyeb_sorozat">Serial number</string>
+    <string name="Egyeb_ar">Price</string>
+    <string name="Egyeb_szolgaltatas_hozzad">Other service add</string>
+    <string name="Worker">Worker</string>
+    <string name="customer">Customer</string>
+    <string name="Munkalap_mentese">Save worksheet</string>
+
+    <string-array name="Statuszok">
+        <item>Completed</item>
+        <item>In progress</item>
+        <item>Deleted</item>
+    </string-array>
+
+    <string-array name="Mennyiseg">
+        <item>piece</item>
+        <item>bbl</item>
+        <item>cu</item>
+        <item>doz</item>
+        <item>F</item>
+        <item>fl</item>
+        <item>gal</item>
+        <item>gr</item>
+        <item>gro</item>
+        <item>in</item>
+        <item>kt</item>
+        <item>lb</item>
+        <item>LT</item>
+        <item>mi</item>
+        <item>mph</item>
+        <item>n.m</item>
+        <item>oz</item>
+        <item>pt</item>
+        <item>qt</item>
+        <item>sq</item>
+        <item>rpm</item>
+        <item>T</item>
+        <item>yd</item>
+    </string-array>
+
+    <string name="Osszesen">Sum</string>
+    <string name="Szolgaltatas_hozzaadva">Service added</string>
+    <string name="szolgaltatas_nev_ures">Service name is empty!</string>
+    <string name="szolgaltatas_egyseg_ures">Service unit is empty!</string>
+    <string name="szolgaltatas_ara_ures">Service price is empty!</string>
+    <string name="szolgaltatas_serial_number_ures">Service serial number is empty!</string>
+    <string name="Munkalap_title">Service worksheet</string>
+    <string name="a_szolgaltatast_megrendeltem">I ordered the service</string>
+    <string name="megrendelo_alairasa">Signature of customer</string>
+    <string name="Munkavegzo_alairasa">Signature of worker</string>
+    <string name="Mentes_sikerult">Saving succeeded.</string>
+    <string name="Mentes_hiba">Save error!</string>
+    <string name="Date">Date</string>
+    <string name="biztos_be_akarja_zarni">Are you sure you want to close it?</string>
+    <string name="nincs_mentesre_lehetoseg">(No save options available!)</string>
+    <string name="Bezar">Close</string>
+    <string name="Egyseg_ar_title">Unit price</string>
+    <string name="Megse">Cancel</string>
+    <string name="Szolgaltatas_title">Service</string>
+    <string name="alairas_elfogadas">" Signature acceptance"</string>
+    <string name="Torles">Deletion</string>
+    <string name="Munkavegzo_alairas_save">Worker signature saved</string>
+    <string name="Megrendelo_alairasa_mentve">Customer signature saved</string>
+
+</resources>

@@ -1,0 +1,74 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Signature"
+    android:background="@drawable/szinatmenet_bc">
+
+
+    <com.github.gcacace.signaturepad.views.SignaturePad
+        android:id="@+id/signature_pad"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/signature_pad_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+
+
+        android:text=""
+
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@id/Alairas_elfogadva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad" />
+
+
+    <Button
+        android:id="@+id/Alairas_elfogadva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:enabled="false"
+        android:text="@string/alairas_elfogadas"
+        android:background="@drawable/button_kerekites_sarga"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/clear_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signature_pad_description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="157dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="108dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@drawable/button_kerekites_szurke"
+        android:textColor="#000000"
+        android:text="@string/Torles"
+        app:layout_constraintTop_toBottomOf="@id/Alairas_elfogadva"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
